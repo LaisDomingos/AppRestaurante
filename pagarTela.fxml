@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="320.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appallwally.PagamentoController">
+   <children>
+      <Text layoutX="98.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pagamento">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="mbwayRadioButton" layoutX="45.0" layoutY="185.0" mnemonicParsing="false" text="MBWay">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="multibancoRadioButton" layoutX="44.0" layoutY="248.0" mnemonicParsing="false" text="Multibanco">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="dinheiroRadioButton" layoutX="44.0" layoutY="317.0" mnemonicParsing="false" text="Dinheiro">
+         <font>
+            <Font name="Berlin Sans FB" size="21.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="btnPagar" layoutX="-5.0" layoutY="462.0" mnemonicParsing="false" onAction="#pagamentoButtonClick" prefHeight="51.0" prefWidth="326.0" style="-fx-background-color: #231508;" text="Pagar" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Pane prefHeight="64.0" prefWidth="320.0" style="-fx-background-color: #231508;">
+         <children>
+            <Button layoutX="259.0" layoutY="11.0" mnemonicParsing="false" onAction="#carrinhoButtonClick" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: #231508;">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@carrinhoIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="220.0" layoutY="15.0" mnemonicParsing="false" onAction="#atendenteButtonClick" prefHeight="41.0" prefWidth="52.0" style="-fx-background-color: #231508;">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pessoaIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="41.0" fitWidth="92.0" layoutX="114.0" layoutY="17.0" onDragDetected="#voltarButtonClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo2Nome.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="33.0" layoutY="21.0" mnemonicParsing="false" onAction="#voltarButtonClick" prefHeight="22.0" prefWidth="52.0" style="-fx-background-color: #231508;">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="45.0" onDragDetected="#voltarButtonClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@seta.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

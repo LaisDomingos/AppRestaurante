@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="310.0" style="-fx-background-color: #231508;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appallwally.TelaDoisController">
+   <children>
+      <Button layoutX="68.0" layoutY="185.0" mnemonicParsing="false" onAction="#atendenteButtonClick" prefHeight="50.0" prefWidth="175.0" style="-fx-background-color: #a01916;" text="Chamar Atendente" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="68.0" layoutY="276.0" mnemonicParsing="false" onAction="#continuarAppButtonClick" prefHeight="50.0" prefWidth="175.0" style="-fx-background-color: #a01916;" text="Solicitar pelo App" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="25.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A qualquer momento pode chamar o atendente " textAlignment="CENTER" wrappingWidth="260.13671875">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="50.0" fitWidth="147.0" layoutX="94.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo2Nome.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

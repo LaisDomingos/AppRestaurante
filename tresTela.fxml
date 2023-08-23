@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="310.0" style="-fx-background-color: #231508;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appallwally.TelaTresController">
+   <children>
+      <Text fill="WHITE" layoutX="25.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chamando atendente" textAlignment="CENTER" wrappingWidth="260.13671875">
+         <font>
+            <Font size="53.0" />
+         </font>
+      </Text>
+      <Text fill="#a01916" layoutX="25.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aguarde..." textAlignment="CENTER" wrappingWidth="260.13671875">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

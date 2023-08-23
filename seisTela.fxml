@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="320.0" style="-fx-background-color: #DCDCDC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.appallwally.TelaSeisController">
+   <children>
+      <Text layoutX="117.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Principal">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Text>
+      <Pane layoutY="100.0" prefHeight="121.0" prefWidth="320.0" style="-fx-border-color: #a01916;">
+         <children>
+            <Text fx:id="txtPrincipalUm" layoutX="95.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filet Mignon com Molho de Vinho Tinto" wrappingWidth="169.009765625">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#a01916" layoutX="265.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30€">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="277.0" layoutY="83.0" mnemonicParsing="false" onAction="#maisUmButtonClick" prefHeight="25.0" prefWidth="29.0" text="+" />
+            <Button layoutX="197.0" layoutY="84.0" mnemonicParsing="false" onAction="#menosUmButtonClick" prefHeight="25.0" prefWidth="29.0" text="-" />
+            <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@filetMignon.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="txtUmP" layoutX="235.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="31.63671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="222.0" prefHeight="121.0" prefWidth="320.0" style="-fx-border-color: #a01916;">
+         <children>
+            <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="14.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@bifeWellington.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="txtPrincipalDois" layoutX="94.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bife Wellington" wrappingWidth="132.009765625">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="#a01916" layoutX="265.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30€">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="277.0" layoutY="84.0" mnemonicParsing="false" onAction="#maisDoisButtonClick" prefHeight="25.0" prefWidth="29.0" text="+" />
+            <Button layoutX="197.0" layoutY="84.0" mnemonicParsing="false" onAction="#menosDoisButtonClick" prefHeight="25.0" prefWidth="29.0" text="-" />
+            <Text fx:id="txtDoisP" layoutX="235.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="31.63671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="340.0" prefHeight="121.0" prefWidth="320.0" style="-fx-border-color: #a01916;">
+         <children>
+            <Text fx:id="txtPrincipalTres" layoutX="99.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Camarões Scampi" wrappingWidth="196.009765625">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font>
+            </Text>
+            <Text fill="#a01916" layoutX="265.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="30€">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button layoutX="277.0" layoutY="83.0" mnemonicParsing="false" onAction="#maisTresButtonClick" prefHeight="25.0" prefWidth="29.0" text="+" />
+            <Button layoutX="197.0" layoutY="84.0" mnemonicParsing="false" onAction="#menosTresButtonClick" prefHeight="25.0" prefWidth="29.0" text="-" />
+            <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@camaroesScampi.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="txtTresP" layoutX="237.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="CENTER" wrappingWidth="31.63671875">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Button layoutY="462.0" mnemonicParsing="false" onAction="#continuarButtonClick" prefHeight="50.0" prefWidth="322.0" style="-fx-background-color: #231508;" text="Adicionar no Carrinho" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAdicionadoP" layoutX="-1.0" layoutY="462.0" mnemonicParsing="false" onAction="#continuarButtonClick" prefHeight="50.0" prefWidth="322.0" style="-fx-background-color: #006400;" text="Adicionado" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Button>
+      <Pane prefHeight="64.0" prefWidth="320.0" style="-fx-background-color: #231508;">
+         <children>
+            <Button layoutX="259.0" layoutY="11.0" mnemonicParsing="false" onAction="#carrinhoButtonClick" prefHeight="49.0" prefWidth="61.0" style="-fx-background-color: #231508;">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@carrinhoIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="220.0" layoutY="15.0" mnemonicParsing="false" onAction="#atendenteButtonClick" prefHeight="41.0" prefWidth="52.0" style="-fx-background-color: #231508;">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pessoaIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="41.0" fitWidth="92.0" layoutX="114.0" layoutY="17.0" onDragDetected="#voltarButtonClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@logo2Nome.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="34.0" layoutY="20.0" mnemonicParsing="false" onAction="#voltarButtonClick" prefHeight="22.0" prefWidth="52.0" style="-fx-background-color: #231508;">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="45.0" onDragDetected="#voltarButtonClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@seta.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
