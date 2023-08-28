@@ -30,7 +30,7 @@ Para explorar o projeto, siga estas etapas:
 2. Certifique-se de ter o ambiente Java configurado.
 3. Execute o aplicativo JavaFX para experimentar as diversas telas e funcionalidades.
 
-## Autora
+## Autor
 
 - Laís Santos
 - 
