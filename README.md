@@ -1,4 +1,4 @@
-# AppRestaurante: All Wally
+# AppRestaurante: All Wally 
 Neste projeto autônomo, mergulhei na criação de um aplicativo inovador para um restaurante fictício. Utilizando a poderosa combinação de Java e JavaFX, concebi uma solução digital que promove uma experiência revolucionária para os clientes.
 
 ## Visão Geral do Projeto
